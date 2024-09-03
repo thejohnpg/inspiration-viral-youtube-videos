@@ -1,0 +1,61 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Estilos para o formulário de busca */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos para a lista de resultados */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.video-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-info img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  /* Estilos para telas maiores */
+  .video-info {
+    flex-direction: row;
+  }
+
+  .video-info img {
+    margin-right: 20px;
+  }
+}

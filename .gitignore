@@ -1,0 +1,11 @@
+# Desconsiderar arquivos de cache
+npm-debug.log*
+yarn-error.log*
+package-lock.json*
+
+# Desconsiderar arquivos de build
+build/
+dist/
+
+# Desconsiderar arquivos de dependências
+node_modules/
