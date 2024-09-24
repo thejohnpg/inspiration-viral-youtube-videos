@@ -38,16 +38,17 @@ searchButton.addEventListener("click", async () => {
 
       // Adicionar informações do vídeo ao elemento div
       li.innerHTML = `
-        <h3>${video.title || "Título Indisponível"}</h3>
-        <p>${video.description || "Descrição Indisponível"}</p>
-        <p>Visualizações: ${video.viewCount || "Indisponível"}</p>
-        <p>Canal: ${video.channelTitle || "Indisponível"}</p>
-        <p>Likes: ${video.likeCount || "Indisponível"}</p>
+        <p><b>Título:</b> ${video.title || "Título Indisponível"}></p>
+        <p><b>Descrição:</b> ${video.description || "Descrição Indisponível"}</p>
+        <p><b>Visualizações:</b> ${video.viewCount || "Indisponível"}</p>
+        <p><b>Canal:</b> ${video.channelTitle || "Indisponível"}</p>
+        <p><b>Likes:</b> ${video.likeCount || "Indisponível"}</p>
       `;
 
       // Adicionar o link para assistir ao vídeo
       const watchLink = document.createElement('a');
       watchLink.href = video.url;
+      watchLink.target = "_blank"
       watchLink.textContent = 'Assistir';
       videoInfo.appendChild(watchLink);
 
